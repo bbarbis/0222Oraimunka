@@ -19,6 +19,13 @@ public class Main {
         osszeg = osszead(osszeg, 4);
         kiir("1+2+3+4="+osszeg+"\n");
         
+       int a = 3, b=4, c=2;
+       osszeg =osszead(osszeg, c);
+       s = "%d+%d+%d gyöke:".formatted(a,b,c);
+       double gyok = Math.sqrt(osszeg);
+       kimenet = String.format("%s %.4f\n", s, gyok);
+       kiir(kimenet);
+        
     }
 
     private static int elso10SzamOsszege() {
