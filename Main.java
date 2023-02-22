@@ -12,7 +12,7 @@ public class Main {
         int szam1 = 7, szam2 = 4;
         osszeg = osszead(szam1, szam2);
         String s = String.format("%d + %d = %d\n", szam1, szam2, osszeg);
-        kiir(s);
+        kiir("%d + %d = %d\n".formatted(szam1, szam2, osszeg));
         
     }
 
