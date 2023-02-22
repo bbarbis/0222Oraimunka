@@ -24,8 +24,7 @@ public class Main {
        s = "%d+%d+%d gyöke:".formatted(a,b,c);
        double gyok = Math.sqrt(osszeg);
        kimenet = String.format("%s %.4f\n", s, gyok);
-       kiir(kimenet);
-        
+        kiir(kimenet);
     }
 
     private static int elso10SzamOsszege() {
