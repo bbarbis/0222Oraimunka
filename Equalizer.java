@@ -6,29 +6,33 @@ import java.util.Random;
 public class Equalizer {
     private static Random rnd = new Random();
     public static void main(String[] args) {
-        equalizer_5_sorban();
+        
         
     }
 
     private static void equalizer_5_sorban() {
         eq();
-        eq(12);
         eq();
-        eq(8);
+        eq();
+        eq();
         eq();
     }
 
-    private static void eq() {
-        int db = rnd.nextInt(3, 8);
-        eq(db);
+    private static void eq(boolean ertekLatszik) {
+        int db = rnd.nextInt(7-3+1)+3;
+        eq(db, ertekLatszik);
     }
 
     
 
-    private static void eq(int hossz) {
+    private static void eq(int db, boolean ertekLatszik) {
+        
         String szin =  "\u001B[45m";
-        for (int i = 0; i< hossz; i++){
-            System.out.print(szin + " ");
+        for (int i = 0; i< db; i++){
+            System.out.print(szin + "*");
+        }
+        if(ertekLatszik){
+            System.out.print(" " + "(" + db + ")");
         }
         System.out.println("");
     }

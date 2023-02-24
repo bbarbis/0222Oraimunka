@@ -1,4 +1,4 @@
-package pkg0222oraimunka;
+/*package pkg0222oraimunka;
 
 
 public class Main {
@@ -55,4 +55,4 @@ public class Main {
         System.out.print(szoveg);
     }
     
-}
+}*/
